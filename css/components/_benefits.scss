@@ -1,0 +1,45 @@
+.benefits{
+  display: flex;
+
+  @include phones{
+    flex-direction: column;
+  }
+}
+
+.benefits__item{
+  flex: 3;
+  padding: 0 3%;
+  position: relative;
+
+  @include phones{
+    padding: 0;
+    margin-bottom: rem(5px);
+  }
+
+  &:first-child{
+    padding-left: 0;
+  }
+
+  &:last-child{
+    padding-right: 0;
+
+    &:before{
+      display: none;
+    }
+  }
+}
+
+.icon__shape{
+  position: absolute;
+  width: rem(73px);
+  right: 0;
+  transform: translateX(50%);
+
+  @include tablets{
+    display: none;
+  }
+
+  @include phones{
+    display: none;
+  }
+}

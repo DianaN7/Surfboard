@@ -1,0 +1,37 @@
+.btn{
+  font-size: rem(19px);
+  font-weight: bold;
+  padding: rem(24px) rem(46px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: 1;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+
+  @include phones{
+    padding: rem(24px) rem(39px);
+  }
+  
+  &--theme--yellow {
+    background: #FEDB3F;
+    color: $black;
+
+    &:hover{
+      color: #FEDB3F;
+      background: $black;
+    }}
+  
+
+  &--theme--transparent{
+    background: transparent;
+    color: #FFFFFF;
+    text-transform: none;
+
+    &:hover{
+      color: black;
+    }
+}
+
+}
+

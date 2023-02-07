@@ -1,0 +1,14 @@
+.map-section{
+  background: url(../img/map2.png) center bottom no-repeat;
+  background-size: cover;
+
+  @include tablets{
+    background: url(../img/map1.png) center bottom no-repeat;
+    background-size: cover;
+  }
+
+  @include phones{
+    background: url(../img/map.png)center bottom no-repeat;
+    background-size: cover;
+  }
+}

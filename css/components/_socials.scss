@@ -1,0 +1,26 @@
+.social__item{
+  display: inline-block;
+  margin-right: rem(10px);
+}
+
+.socials{
+  margin-right: rem(0px);
+}
+.socail__item:last-child{
+  margin-right: 0;
+}
+
+
+.icon__socials{
+  width: rem(25px);
+  height: rem(25px);
+  color: #B3B3B3;
+
+  &--active{
+    color: black;
+  }
+
+  &:hover{
+    color: black;
+  }
+}
