@@ -563,6 +563,42 @@
           </div>
         </div>
       </section>
+     <section class="section video">
+      <div class="container video__container">
+        <h2 class="section__title">Как мы работаем</h2>
+        <div class="video__wrapper">
+
+          <div class="video__player">
+            <video src="./video/ICELAND.mp4" id="player" poster="./img/player.png">
+              <source src="./video/ICELAND.mp4" type="video/mp4">
+            </video>
+            <button class="video__player-img">
+             <img src="./img/play.svg" alt="play icon" class="play video__btn-img">
+            </button>
+          </div>
+
+          <div class="video__toolbar">
+            <div class="duration">
+              <div class="duration__btn-wrap">
+                <button class="play duration__img"></button>
+              </div>
+              <div class="duration__length-wrap">
+                <input type="range" class="duration__length" id="durationLevel">
+              </div>
+            </div>
+            <div class="sound" id="soundBtn">
+              <button class="sound__btn">
+               <img src="./img/volume.svg" alt="volume icon" class="sound__mic" id="dynamic">
+              </button>
+              <div class="sound__volume">
+                <input type="range" class="duration__length duration__lenght--other" id="micLevel">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
       <section class="section order-section section--font-color--white">
         <div class="container order__container">
           <h2 class="section__title">Закажите доску</h2>
@@ -738,5 +774,6 @@
   <script src="./scripts/reviews.js"></script>
   <script src="./scripts/modal.js"></script>
   <script src="./scripts/burger.js"></script>
+  <script src="./scripts/video.js"></script>
 </body>
 </html>
