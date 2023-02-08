@@ -2065,7 +2065,8 @@ img {
 }
 @media screen and (max-width: 480px) {
   .sound {
-    margin: 0 0.8888888889rem;
+    margin-left: 0.1111111111rem;
+    margin-right: 0.8888888889rem;
   }
 }
 .sound::before {

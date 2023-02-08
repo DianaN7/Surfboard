@@ -164,8 +164,8 @@
   position: relative;
 
   @include phones{
-    margin: 0 rem(16px);
-  }
+    margin-left: rem(2px);
+    margin-right: rem(16px);}
 
   &::before{
     content: "";
