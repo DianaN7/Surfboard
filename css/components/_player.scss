@@ -130,6 +130,10 @@
 .duration__length--other{
   width: rem(58px);
   height: rem(4px);
+
+  @include phones{
+    width: rem(48px);
+  }
 }
 
 .duration__length::-webkit-slider-runnable-track{
@@ -164,7 +168,7 @@
   position: relative;
 
   @include phones{
-    margin-left: rem(2px);
+    margin-left: rem(5px);
     margin-right: rem(16px);
   }
 

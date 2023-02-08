@@ -2026,6 +2026,11 @@ img {
   width: 3.2222222222rem;
   height: 0.2222222222rem;
 }
+@media screen and (max-width: 480px) {
+  .duration__length--other {
+    width: 2.6666666667rem;
+  }
+}
 
 .duration__length::-webkit-slider-runnable-track {
   color: #FEDB3F;
@@ -2065,7 +2070,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .sound {
-    margin-left: 0.1111111111rem;
+    margin-left: 0.2777777778rem;
     margin-right: 0.8888888889rem;
   }
 }
