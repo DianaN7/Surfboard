@@ -1889,19 +1889,19 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 36.7777777778rem;
-  height: 21.7777777778rem;
+  width: 36.6666666667rem;
+  height: 27.2222222222rem;
 }
 @media screen and (max-width: 768px) {
   .video__wrapper {
-    width: 33rem;
-    height: 19.5rem;
+    width: 32.7777777778rem;
+    height: 19.4444444444rem;
   }
 }
 @media screen and (max-width: 480px) {
   .video__wrapper {
     width: 80%;
-    height: 12.3888888889rem;
+    height: 12.2222222222rem;
   }
 }
 
@@ -1970,42 +1970,27 @@ img {
   padding-left: 16px;
 }
 
-.duration__btn-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 2.2222222222rem;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-@media screen and (max-width: 480px) {
-  .duration__btn-wrap {
-    width: 1.7777777778rem;
-  }
-}
-
 .duration__img {
+  margin-right: 1.1111111111rem;
+  border: none;
   background: transparent;
   outline: none;
   cursor: pointer;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
-  background: url("../img/small-play.svg") center center/cover no-repeat;
-  width: 0.5555555556rem;
+  background: url(../img/small-play.svg) center center/cover no-repeat;
+  width: 0.6666666667rem;
   height: 0.8333333333rem;
-  border: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .duration__img {
-    width: 0.2777777778rem;
+    margin-right: 0.8333333333rem;
+    width: 0.7777777778rem;
   }
 }
 
 .duration__img-pause {
-  border: 6px solid #fff;
+  border: 5px solid #fff;
   height: 15px;
   border-top: 0;
   border-bottom: 0;
@@ -2027,31 +2012,24 @@ img {
           align-items: center;
 }
 
-.duration__length-wrap {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .duration__length {
   width: 95%;
-  height: 4px;
-  border-radius: 1px;
+  height: 0.2222222222rem;
+  border-radius: 0.0555555556rem;
   background: -webkit-gradient(linear, left top, right top, from(#FEDB3F), color-stop(0%, #626262));
   background: linear-gradient(90deg, #FEDB3F 0% #FEDB3F 0%, #626262 0%);
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
   outline: none;
 }
 
 .duration__length--other {
-  width: 58px;
-  height: 4px;
+  width: 3.2222222222rem;
+  height: 0.2222222222rem;
+}
+@media screen and (max-width: 480px) {
+  .duration__length--other {
+    width: 2.6666666667rem;
+  }
 }
 
 .duration__length::-webkit-slider-runnable-track {
@@ -2064,8 +2042,8 @@ img {
   appearance: none;
   background: #FEDB3F;
   cursor: pointer;
-  width: 14px;
-  height: 14px;
+  width: 0.7777777778rem;
+  height: 0.7777777778rem;
   border-radius: 50%;
 }
 
@@ -2075,8 +2053,8 @@ img {
        appearance: none;
   background: #FEDB3F;
   cursor: pointer;
-  width: 15px;
-  height: 15px;
+  width: 0.8333333333rem;
+  height: 0.8333333333rem;
   border-radius: 50%;
 }
 
@@ -2090,28 +2068,34 @@ img {
   margin: 0 1.2222222222rem;
   position: relative;
 }
-.sound:before {
+@media screen and (max-width: 480px) {
+  .sound {
+    margin-left: 0.2777777778rem;
+    margin-right: 0.8888888889rem;
+  }
+}
+.sound::before {
   content: "";
   width: 1.4444444444rem;
   height: 0.1666666667rem;
   background-color: #FEDB3F;
   position: absolute;
   display: block;
-  left: -3px;
+  left: -0.1666666667rem;
   top: 50%;
-  -webkit-transform: translateY(-50%) rotate(42deg);
-          transform: translateY(-50%) rotate(42deg);
+  -webkit-transform: translateY(50%) rotate(42deg);
+          transform: translateY(50%) rotate(42deg);
   z-index: 2;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 @media screen and (max-width: 480px) {
-  .sound:before {
-    left: -2px;
+  .sound::before {
+    left: -0.1111111111rem;
   }
 }
-.sound.active:before {
+.sound.active::before {
   opacity: 1;
 }
 
@@ -2123,11 +2107,16 @@ img {
 
 .sound__mic {
   cursor: pointer;
-  height: 17px;
-  width: 14px;
+  height: 0.9444444444rem;
+  width: 0.7777777778rem;
 }
 
 .sound__volume {
-  margin-left: 25px;
-  margin-top: -5px;
+  margin-left: 1.1111111111rem;
+  margin-top: -0.3333333333rem;
+}
+@media screen and (max-width: 480px) {
+  .sound__volume {
+    margin-left: 0.8333333333rem;
+  }
 }
