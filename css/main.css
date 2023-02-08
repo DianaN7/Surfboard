@@ -1984,6 +1984,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .duration__img {
+    margin-right: 0.8333333333rem;
     width: 0.7777777778rem;
   }
 }
@@ -2062,6 +2063,11 @@ img {
   margin: 0 1.2222222222rem;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .sound {
+    margin: 0 0.8888888889rem;
+  }
+}
 .sound::before {
   content: "";
   width: 1.4444444444rem;
@@ -2102,4 +2108,9 @@ img {
 .sound__volume {
   margin-left: 1.1111111111rem;
   margin-top: -0.3333333333rem;
+}
+@media screen and (max-width: 480px) {
+  .sound__volume {
+    margin-left: 0.8333333333rem;
+  }
 }

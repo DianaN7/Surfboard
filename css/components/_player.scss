@@ -94,6 +94,7 @@
   height: rem(15px);
 
   @include tablets{
+    margin-right: rem(15px);
     width: rem(14px);
   }
 }
@@ -162,6 +163,10 @@
   margin: 0 rem(22px);
   position: relative;
 
+  @include phones{
+    margin: 0 rem(16px);
+  }
+
   &::before{
     content: "";
     width: rem(26px);
@@ -203,4 +208,8 @@
 .sound__volume{
   margin-left: rem(20px);
   margin-top: rem(-6px);
+
+  @include phones{
+    margin-left: rem(15px);
+  }
 }
