@@ -84,8 +84,12 @@
 .duration__btn-wrap {
   display: flex;
   align-items: center;
-  width: 40px;
+  width: rem(40px);
   flex-shrink: 0;
+
+  @include phones{
+    width: rem(32px);
+  }
 }
 
 .duration__img {
@@ -97,6 +101,10 @@
   width: rem(10px);
   height: rem(15px);
   border: none;
+
+  @include phones{
+    width: rem(5px);
+  }
 }
 
 .duration__img-pause {

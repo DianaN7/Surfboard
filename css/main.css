@@ -1977,9 +1977,14 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40px;
+  width: 2.2222222222rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+@media screen and (max-width: 480px) {
+  .duration__btn-wrap {
+    width: 1.7777777778rem;
+  }
 }
 
 .duration__img {
@@ -1992,6 +1997,11 @@ img {
   width: 0.5555555556rem;
   height: 0.8333333333rem;
   border: none;
+}
+@media screen and (max-width: 480px) {
+  .duration__img {
+    width: 0.2777777778rem;
+  }
 }
 
 .duration__img-pause {
