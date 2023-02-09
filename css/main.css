@@ -16,23 +16,34 @@ html {
 
 html,
 body {
-  height: 100vh;
+  height: 100%;
 }
 
 body {
   font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
   line-height: 1.42;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  color: #000000;
 }
 
 .wrapper {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -81,6 +92,10 @@ footer {
 
 a {
   color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 img {
@@ -91,7 +106,7 @@ img {
 .hero {
   background: url("../img/bg.png") center top no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   color: #FFFFFF;
 }
@@ -304,6 +319,64 @@ img {
   white-space: nowrap;
 }
 
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  z-index: 100;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+
+.fixed-menu__item {
+  margin-bottom: 0.2777777778rem;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border: 0.0555555556rem solid;
+}
+
+.fixed-menu__link {
+  width: 0.8888888889rem;
+  height: 0.8888888889rem;
+  border-radius: 50%;
+  border: 0.0555555556rem solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link:hover {
+  border: 0.0555555556rem solid;
+}
+.fixed-menu__link:before {
+  content: "";
+  display: block;
+  width: 0.3333333333rem;
+  height: 0.3333333333rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.fixed-menu--shadowed {
+  color: #666666;
+}
+
+.fixed-menu__link--shadowed:before {
+  background: #666666;
+}
+
 .features {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,7 +442,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,6 +454,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 .section--font-color--white {
   color: #FFFFFF;
@@ -886,7 +960,7 @@ img {
 }
 
 .team-section__title {
-  margin-bottom: 50px;
+  margin-bottom: 95px;
 }
 @media screen and (max-width: 768px) {
   .team-section__title {
@@ -1423,42 +1497,6 @@ img {
   margin-bottom: 1.2222222222rem;
 }
 
-.fixed-menu {
-  position: fixed;
-  top: 20%;
-  right: 3%;
-  z-index: 100;
-}
-
-.fixed-menu__item {
-  margin-bottom: 0.2777777778rem;
-}
-.fixed-menu__item--active .fixed-menu__link {
-  border-color: #FFFFFF;
-}
-
-.fixed-menu__link {
-  width: 0.8888888889rem;
-  height: 0.8888888889rem;
-  border-radius: 50%;
-  border: 0.0555555556rem solid transparent;
-  display: block;
-  position: relative;
-}
-.fixed-menu__link::before {
-  content: "";
-  display: block;
-  width: 0.3333333333rem;
-  height: 0.3333333333rem;
-  border-radius: 50%;
-  background: #FFFFFF;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .hamburger {
   width: 1.3333333333rem;
   height: 1.3333333333rem;
@@ -1486,25 +1524,30 @@ img {
   border-radius: 0.5555555556rem;
 }
 
-.map {
+.map-section {
   position: relative;
 }
 
 .map__yandex {
   width: 100%;
   height: 100%;
+  position: absolute;
 }
 
 .footer {
+  margin: 0 auto;
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1.0555555556rem;
+  padding-top: 0.9444444444rem;
   background-color: #FFFFFF;
+  min-height: 5rem;
+  width: 100%;
 }
 
 .footer__container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 940px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1525,7 +1568,7 @@ img {
 }
 
 .contacts {
-  font-size: 1.3333333333rem;
+  font-size: 1.2222222222rem;
 }
 @media screen and (max-width: 480px) {
   .contacts {

@@ -12,25 +12,29 @@ html{
 
 html,
 body {
-  height: 100vh;
+  height: 100%;
 }
 
 body {
   font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
   line-height: 1.42;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  color: #000000;;
+  //position: relative;
+  //color: #000000;;
 }
 
 .wrapper {
-  position: relative;
+  //position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
 }
-
+.maincontent{
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
+}
 .container {
   width: 95%;
   max-width: $containerWidth;
@@ -76,6 +80,9 @@ footer {
 
 a {
   color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s all;
 }
 
 img {

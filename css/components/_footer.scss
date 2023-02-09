@@ -1,14 +1,18 @@
 .footer{
+  margin: 0 auto;
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  padding: rem(19px);
+  padding-top: 0.9444444444rem;
   background-color: #FFFFFF;
+  min-height: 5rem;
+  width: 100%;
 }
 
 
 .footer__container{
+  margin: 0 auto;
+  width: 95%;
+  max-width: 940px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +24,7 @@
 
 
 .contacts{
-  font-size: rem(24px);
+  font-size: rem(22px);
 
   @include phones{
     margin-bottom: rem(10px);

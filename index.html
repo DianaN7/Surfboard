@@ -13,7 +13,7 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section class="hero">
+      <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
         <div class="container hero__container">
           <header class="header">
             <a href="index.html" class="logo"> 
@@ -23,13 +23,13 @@
               </a>
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item"> <a href="#" class="menu__link">О нас</a></li>
-                <li class="menu__item"> <a href="#" class="menu__link">Серфборды</a></li>
-                <li class="menu__item"> <a href="#" class="menu__link">Команда</a></li>
-                <li class="menu__item"> <a href="#" class="menu__link">Меню</a></li>
-                <li class="menu__item"> <a href="#" class="menu__link">Отзывы</a></li>
-                <li class="menu__item"> <a href="#" class="menu__link">Как мы работаем</a></li>
-                <li class="menu__item"> <a href="#" class="menu__link">Контакты</a></li>
+                <li class="menu__item"> <a href="#" data-scroll-to="benefits" class="menu__link">О нас</a></li>
+                <li class="menu__item"> <a href="#" data-scroll-to="products" class="menu__link">Серфборды</a></li>
+                <li class="menu__item"> <a href="#" data-scroll-to="team" class="menu__link">Команда</a></li>
+                <li class="menu__item"> <a href="#" data-scroll-to="products-menu" class="menu__link">Меню</a></li>
+                <li class="menu__item"> <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a></li>
+                <li class="menu__item"> <a href="#" data-scroll-to="video" class="menu__link">Как мы работаем</a></li>
+                <li class="menu__item"> <a href="#" data-scroll-to="contacts" class="menu__link">Контакты</a></li>
               </ul>
             </nav>
             <a href="tel:+78009039090" class="phone-number header__phone-number">
@@ -49,7 +49,7 @@
           <div class="hero__title-section">
             <h1 class="hero__main-title">Профессиональные доски для серфинга</h1>
              <div class="hero__title-desc">Самый большой выбор серфбордов в мире</div>
-             <a href="#" class="btn btn--theme--yellow">Заказать</a>
+             <a href="#" data-scroll-to="order" class="btn btn--theme--yellow">Заказать</a>
             </div>
           <div class="hero__icons-section">
             <ul class="features">
@@ -81,7 +81,7 @@
           </div>
         </div>
       </section>
-      <section class="section benefits-section">
+      <section data-sidemenu-theme="black" data-section-id="benefits" class="section benefits-section">
         <div class="container benefits__container">
           <div class="headline">
             <h2 class="section__title headline__title">почему Surfboard?</h2>
@@ -148,7 +148,7 @@
           </ul>
         </div>
       </section>
-      <section class="section products">
+      <section data-sidemenu-theme="black" data-section-id="products" class="section products">
         <div class="container products__container">
           <div class="products__slider">
             <div class="products__arrows">
@@ -318,7 +318,7 @@
           </div>
         </div>
       </section>
-      <section class="section team-section">
+      <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
         <div class="container">
           <h2 class="section__title team-section__title">Команда</h2>
           <ul class="team team--version--desktop">
@@ -479,8 +479,7 @@
           </ul>
         </div>
       </section>
-
-      <section class="section products-menu-section" data-fixedmenu-theme="white" data-section-id="products-menu">
+      <section data-sidemenu-theme="white" data-section-id="products-menu" class="section products-menu-section" data-fixedmenu-theme="white" data-section-id="products-menu">
           <h2 class="section__title products-menu-section__title">Меню</h2>
           <ul class="products-menu">
             <li class="products-menu__item">
@@ -522,8 +521,7 @@
 
           </ul>
       </section>
-
-      <section class="section reviews">
+      <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews">
         <div class="container reviews__container">
           <h2 class="section__title reviews__title">Отзывы</h2>
           <div class="review">
@@ -607,7 +605,7 @@
           </div>
         </div>
       </section>
-     <section class="section video">
+     <section data-sidemenu-theme="black" data-section-id="video" class="section video">
       <div class="container video__container">
         <h2 class="section__title">Как мы работаем</h2>
         <div class="video__wrapper">
@@ -642,8 +640,7 @@
         </div>
       </div>
      </section>
-
-      <section class="section order-section section--font-color--white">
+      <section data-sidemenu-theme="white" data-section-id="order" class="section order-section section--font-color--white">
         <div class="container order__container">
           <h2 class="section__title">Закажите доску</h2>
           <form class="form" autocomplete="off">
@@ -728,26 +725,26 @@
           </div>
         </div>
       </section>
-      <section class="section map-section">
+      <section data-sidemenu-theme="black" data-section-id="contacts" class="section map-section">
         <div id="map" class="map__yandex"></div>
         <footer class="footer">
           <div class="container footer__container">
             <adress class="contacts">Москва, ул.Новый Арбат, д.31/12
             <a href="tel:+78009039090" class="phone-number footer__phone-number">
-              <span class="phone-number__icon">
+                <span class="phone-number__icon">
                 <svg class="icon__phone">
                   <use xlink:href="./sprite.svg#phone"></use>
-                </svg>
-              </span>
+                  </svg>
+                </span>
               <span class="phone-number__text">8 800 903 90 90</span></a></adress>
-          <div class="footer__col">
+          
             <ul class="socials">
               <li class="social__item">
                <a href="" class="social__link--wk">
                 <svg class="icon__socials">
                   <use xlink:href="./sprite.svg#vk"></use>
-                </svg>
-               </a>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
                 <a href="" class="social__link">
@@ -755,22 +752,22 @@
                     <use xlink:href="./sprite.svg#f"></use>
                   </svg>
                 </a>
-               </li>
-               <li class="social__item">
+              </li>
+              <li class="social__item">
                 <a href="" class="social__link">
                   <svg class="icon__socials">
                     <use xlink:href="./sprite.svg#insta"></use>
                   </svg>
                 </a>
-               </li>
-               <li class="social__item">
+              </li>
+              <li class="social__item">
                 <a href="" class="social__link">
                   <svg class="icon__socials">
                     <use xlink:href="./sprite.svg#twi"></use>
                   </svg>
                 </a>
-               </li>
-            </ul></div>
+              </li>
+            </ul>
           </div>
         </footer>
       </section>
@@ -778,18 +775,17 @@
   </div>
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
-      <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item fixed-menu__item--active"> <a href="#" data-scroll-to="hero" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="benefits" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="products" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="team" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="menu" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="reviews" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="video" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="order" class="fixed-menu__link"> </a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="contacts" class="fixed-menu__link"> </a> </li>
     </ul>
   </nav>
-
 
   <div class="burger-menu">
 
@@ -814,7 +810,10 @@
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=f8f6b0a6-c327-4919-ad5f-d18eab3717d5&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
   <script src="./scripts/map.js"></script>
+  <script src="./scripts/ops.js"></script>
   <script src="./scripts/team.js"></script>
   <script src="./scripts/slider.js"></script>
   <script src="./scripts/menu-acco.js"></script>
