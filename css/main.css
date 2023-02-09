@@ -2112,3 +2112,111 @@ img {
     margin-left: 0.8333333333rem;
   }
 }
+
+.section.products-menu-section {
+  background: url("../img/slider-menu.png") top center/cover no-repeat;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.section__title.products-menu-section__title {
+  color: #fff;
+  text-align: left;
+  margin-top: 6.0555555556rem;
+  margin-left: 8.6111111111rem;
+}
+@media screen and (max-width: 768px) {
+  .section__title.products-menu-section__title {
+    font-size: 2.5555555556rem;
+    margin-left: 1.1111111111rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__title.products-menu-section__title {
+    font-size: 2.2222222222rem;
+    margin-left: 0.8333333333rem;
+  }
+}
+
+.products-menu {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.products-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products-menu__title {
+  text-decoration: none;
+  position: relative;
+  width: 102px;
+}
+@media screen and (max-width: 480px) {
+  .products-menu__title {
+    width: 5rem;
+  }
+}
+
+.products-menu__title-img {
+  background: #000;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.products-menu__title-text {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 48px;
+  font-weight: 700;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+          transform: rotate(-90deg) translateY(-50%);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+@media screen and (max-width: 480px) {
+  .products-menu__title-text {
+    font-size: 2.2222222222rem;
+  }
+}
+
+.products-menu__content {
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  background: rgba(51, 53, 55, 0.9);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  width: 0;
+  overflow: hidden;
+}
+
+.products-menu__content-main {
+  padding: 31px 80px 31px 38px;
+}
+@media screen and (max-width: 768px) {
+  .products-menu__content-main {
+    padding: 42px 53px 42px 38px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .products-menu__content-main {
+    padding: 1.6111111111rem 1.9444444444rem 1.6111111111rem 2.1111111111rem;
+  }
+}
