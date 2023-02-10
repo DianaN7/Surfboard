@@ -22,7 +22,6 @@ $(".form").submit(e => {
   const to = form.find("[name='to']");
   const modal = $("#modal");
   const content = modal.find(".modal__content");
-
   modal.removeClass("error-modal");
 
   const isValid = validateFields(form, [name, phone, comment, to]);
@@ -43,17 +42,17 @@ $(".form").submit(e => {
       content.text(data.message);
     });
 
-    request.fail((data) => {
-      const message = data.responseJSON.message;
-      content.text(message);
-      modal.addClass("error-modal");
-    });
+
+    request.fail(() => {
+      content.text('Произошла ошибка');
+    })
 
     request.always(() => {
       $.fancybox.open({
         src: "#modal",
         type: "inline",
        });
+
     })
   }
 });

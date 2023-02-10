@@ -22,6 +22,11 @@ body {
   //color: #000000;;
 }
 
+.body_closed{
+  height: 100%;
+  overflow: hidden;
+}
+
 .wrapper {
   //position: relative;
   display: flex;

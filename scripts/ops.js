@@ -57,7 +57,7 @@
     display.css({
       transform: `translateY(${position}%)`,
     });
-  
+
     resetActiveClassForItem(sections, sectionEq, "active");
   
     setTimeout(() => {
@@ -65,7 +65,7 @@
   
       resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__item--active");
     }, transitionOver + mouseInertiaOver);
-  
+   
   };
   
   const viewportScroller = () => {

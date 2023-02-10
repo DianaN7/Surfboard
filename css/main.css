@@ -24,6 +24,11 @@ body {
   line-height: 1.42;
 }
 
+.body_closed {
+  height: 100%;
+  overflow: hidden;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
