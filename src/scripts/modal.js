@@ -1,4 +1,5 @@
-const validateFields = (form, fieldsArray) => {
+;(function() {
+  const validateFields = (form, fieldsArray) => {
   
   fieldsArray.forEach((field) => {
     field.removeClass("input-error");
@@ -61,4 +62,5 @@ $(".app-submit-btn").click(e=> {
   e.preventDefault();
 
   $.fancybox.close();
-})
+});
+})();

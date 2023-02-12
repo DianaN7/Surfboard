@@ -1,4 +1,4 @@
-(function(){
+;(function(){
   const whatWidth = (item) =>{
     let reqItemWidth = 0;
   

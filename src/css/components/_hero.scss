@@ -1,5 +1,5 @@
 .hero {
- background: url("../img/bg.png") center top no-repeat;
+ background: url("../src/img/bg.png") center top no-repeat;
  background-size: cover;
  //height: 100vh;
  height: 100%;
@@ -7,7 +7,7 @@
  color: #FFFFFF;
 
 @include tablets{
-  background: url("../img/tablets.png") center top rem(90px) no-repeat;
+  background: url("../src/img/tablets.png") center top rem(90px) no-repeat;
   background-color: #1968B1;
   background-size: cover;
 }

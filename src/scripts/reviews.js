@@ -16,11 +16,4 @@
     itemToShow.addClass("review__item--active").siblings().removeClass("review__item--active");
     curItem.addClass("interactive-avatar--active").siblings().removeClass("interactive-avatar--active");
   });
-  })()
-
-
-
-
-
-
-
+})();

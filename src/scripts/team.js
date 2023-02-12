@@ -1,4 +1,5 @@
-const openItem = function(item) {
+;(function() {
+  const openItem = function(item) {
 
   const itemContainer = item.closest('.team__item');
   const content = itemContainer.find('.team__content');
@@ -31,12 +32,13 @@ const openItem = function(item) {
   
     if(elemStore.hasClass('active')){
       closeItem(itemStore);
-      triangle.attr('xlink:href', './sprite.svg#down')
+      triangle.attr('xlink:href', '/src/img/sprite.svg#down')
     } else{
       closeItem(itemStore);
       openItem(chosenElem);
-      triangleAll.attr('xlink:href', './sprite.svg#down');
-      triangle.attr('xlink:href', './sprite.svg#up');
+      triangleAll.attr('xlink:href', '/src/img/sprite.svg#down');
+      triangle.attr('xlink:href', '/src/img/sprite.svg#up');
   
     }
   });
+})();

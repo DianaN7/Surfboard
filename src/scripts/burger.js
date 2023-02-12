@@ -33,4 +33,4 @@
     body.classList.remove("body_closed");
     section.classList.add("active");
   });
-  })()
+})();
