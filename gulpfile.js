@@ -91,7 +91,7 @@ task("icons", () => {
       }
     }
   }))
-  ).pipe(dest("dist/image"));
+  ).pipe(dest("dist/img"));
 });
 
 task('server', () => {
