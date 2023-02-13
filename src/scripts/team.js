@@ -32,12 +32,12 @@
   
     if(elemStore.hasClass('active')){
       closeItem(itemStore);
-      triangle.attr('xlink:href', '../img/sprite.svg#down')
+      triangle.attr('xlink:href', './img/sprite.svg#down')
     } else{
       closeItem(itemStore);
       openItem(chosenElem);
-      triangleAll.attr('xlink:href', '../img/sprite.svg#down');
-      triangle.attr('xlink:href', '../img/sprite.svg#up');
+      triangleAll.attr('xlink:href', './img/sprite.svg#down');
+      triangle.attr('xlink:href', './img/sprite.svg#up');
   
     }
   });
